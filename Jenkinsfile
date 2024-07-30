@@ -17,11 +17,10 @@ node ('Ubuntu-app-agent'){
         app = docker.build("afrzlfa/snake")
     }
     stage('Post-to-dockerhub') {
-     docker.withRegistry('https://registry.hub.docker.com', 'training_creds') {
-            app.push("latest")
-        			}
-         }
-  
+        docker.withRegistry('https://registry.hub.docker.com', 'training_creds') {
+             app.push("latest")
+        }
+    }
     
     stage('Pull-image-server') {
     

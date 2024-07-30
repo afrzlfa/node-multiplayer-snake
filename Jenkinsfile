@@ -7,7 +7,7 @@ node ('Ubuntu-app-agent'){
     
     /*
     stage('SAST') {
-        build 'SCA-SAST-SNYK'
+        build 'SCA-SAST-SNYK' 
     }
     */
     

@@ -4,10 +4,11 @@ node ('Ubuntu-app-agent'){
         /* Let's make sure we have the repository cloned to our workspace */
        checkout scm
     }  
-
+    /*
     stage('SAST') {
         build 'SCA-SAST-SNYK'
     }
+    */
     
     stage('Build-and-Tag') {
     /* This builds the actual image; synonymous to
@@ -27,10 +28,11 @@ node ('Ubuntu-app-agent'){
          sh "docker-compose down"
          sh "docker-compose up -d"	
       }
-
+    /*
     stage('DAST') {
         build 'SECURITY-DAST-Arachni'
     }
+    */
  
 }
 

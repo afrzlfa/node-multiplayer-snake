@@ -21,7 +21,7 @@ node ('Ubuntu-app-agent'){
              app.push("latest")
         }
     }
-    /* Test */
+    /* - Tes - t */
     
     stage('Pull-image-server') {
     

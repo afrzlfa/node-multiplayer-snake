@@ -47,6 +47,8 @@ node('Ubuntu-app-agent') {
     }
 }
 
+/* Test */
+
 def notifyBuild(String buildStatus = 'STARTED') {
     // Build status of null means successful
     buildStatus = buildStatus ?: 'SUCCESSFUL'
